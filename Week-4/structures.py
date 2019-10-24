@@ -3,13 +3,12 @@ structures.py
 
 Simple functions performing operations on basic Python data structures.  
 '''
-
 #Lists
 
 # write a function that returns a list containig the first and the last element
 # of "the_list". 
 def first_and_last(the_list):
-    return the_list[0],the_list[-1]
+    return the_list[0, -1]
 
 
 # write a function that returns part of "the_list" between indices given by the
@@ -18,15 +17,16 @@ def first_and_last(the_list):
 # If "end" is greater then "beginning" or any og the indices is out of the
 # list, raise a "ValueError" exception. 
 def part_reverse(the_list, beginning, end):
-    if  beginning > end:
-        raise ValueError
-    return the_list.reverse[beginning,end]
+    #if  beginning > end:
+    #    raise ValueError
+    return the_list[beginning: end].reverse()
 
 
 # write a function that at the "index" of "the_list" inserts three times the
 # same value. For example if the_list = [0,1,2,3,4] and index = 3 the function
 # will return [0,1,2,3,3,3,4]. 
 def repeat_at_index(the_list, index):
+    #for i in 
     return
 
 
@@ -72,12 +72,16 @@ def value_exists(dictionary, value):
 def merge_dictionaries(dictionary1, dictionary2):
     return
 
+
 def main():
     '''
     The main function that returns when you run the code.
     '''
-    #print(first_and_last(['red','blue','green','yellow','orange']))
-    print(part_reverse(['red','blue','green','yellow','orange'],2,5)
+    the_list = ['red','blue','green','orange','yellow','white','grey']
+    beginning = 2
+    end = 5
+    #print(first_and_last(the_list))
+    print(part_reverse(the_list, beginning, end))
 
 if __name__ == '__main__':
     main()
