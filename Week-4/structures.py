@@ -71,17 +71,3 @@ def value_exists(dictionary, value):
 # from dictionary1 and dictionary2.
 def merge_dictionaries(dictionary1, dictionary2):
     return
-
-
-def main():
-    '''
-    The main function that returns when you run the code.
-    '''
-    the_list = ['red','blue','green','orange','yellow','white','grey']
-    beginning = 2
-    end = 5
-    #print(first_and_last(the_list))
-    print(part_reverse(the_list, beginning, end))
-
-if __name__ == '__main__':
-    main()
