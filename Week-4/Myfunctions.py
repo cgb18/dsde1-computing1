@@ -162,7 +162,6 @@ def other():
     #8 - checks whether a given value is present
     print(value_exists(dictionary, input('Please type a given value to check if it is present in the dictionary: ')))
 
-def main():
     #9 - lets the user create 2 dictionaries and merges all of the values
     dictionary1 = {}
     n_keys1 = int(input('Please enter the number of keys in your first dictionary: '))
@@ -178,6 +177,14 @@ def main():
         item1_2 = input('Please enter item ' + str(i+1) + ': ')
         dictionary2[key1_2] = item1_2
     print(merge_dictionaries(dictionary1, dictionary2))
+
+
+
+def main():
+    #6 - concatenates sentences and allows to type punctuation + fixes upper case
+    sentence1 = input('Please enter a first sentence: ')
+    sentence2 = input('Please enter a second sentence: ')
+    print(concatenate_sentences(sentence1, sentence2))
 
 if __name__ == '__main__':
     main()
