@@ -41,14 +41,14 @@ class TestSum(unittest.TestCase):
         '''
         Test palindrome word
         '''
-        resutl = st.palindrome_word("madam")
+        result = st.palindrome_word("madam")
         self.asserIs(result, True)
 
     def test_palindrome_word2(self):
         '''
         Test palindrome word
         '''
-        resutl = st.palindrome_word("Madam")
+        result = st.palindrome_word("Madam")
         self.asserIs(result, True)
 
     def test_palindrome_word3(self):
